@@ -1,0 +1,365 @@
+body {
+    margin: 0px;
+ }
+ .conteyner {
+    padding-top: 1px;
+    height: 100vh;
+    position: relative;
+    background: -webkit-linear-gradient(#72ecee, #edfdfd);
+    background: -moz-linear-gradient(#72ecee, #edfdfd);
+    background: linear-gradient(#72ecee, #edfdfd);
+ }
+ #rotate {
+     display: none;
+ }
+ #text {
+     margin: 300px 25px 0 25px;
+     color: white;
+     font-size: 20px;
+     text-align: center;
+ }
+ .conteynerM2 {
+    background-image: url('Image/fon1.gif')
+ }
+ .clearfix:after {content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+ }
+ .image {
+    float: left;
+    margin: 2% 0 0 2%;
+    width: 55%;
+ }
+ .tag {font-size: 72px;
+    position: absolute;
+    top: 120px;
+    left: 55%;
+    font-family: Rubik Bubbles, cursive;
+    color: #a65de9;
+ }
+ .tag2 {font-size: 72px;
+    position: absolute;
+    top: 180px;
+    left: 63%;
+    font-family: Rubik Bubbles, cursive;
+    color: #a65de9;
+ }
+ 
+ .text-box {
+    position: absolute;
+    top: 350px;
+    left: 63%;
+    text-align: center;
+ }
+ 
+ .suN {
+    width: 23%;
+    position: absolute;
+    left: 25%;
+    top: 260px;
+ }
+ 
+ .suN {
+    animation-name: rotation1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+ }
+ @keyframes rotation1 {
+     0% {
+         transform:rotate(0deg);
+     }
+     25% {
+         transform:rotate(30deg);
+     }
+     50% {
+         transform:rotate(0deg);
+     }
+     75% {
+         transform:rotate(-30deg);
+     }
+     100% {
+         transform:rotate(0deg);
+     }
+ }
+ 
+ .btn:link,
+ .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    min-width: 230px;
+    min-height: 40px;
+    font-family: Rampart One, Balsamiq Sans, Comfortaa, cursive;
+    font-size: 22px;
+    font-weight: 700;
+    color: #f5ecfe;
+    background: #9947e6;
+    background: linear-gradient(90deg, rgba(196, 141, 247, 1) 0%, rgba(166, 93, 233, 1) 100%);
+    box-shadow: 12px 12px 24px rgba(196, 141, 247, 1);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    padding: 10px;
+    line-height: 40px;
+ }
+ 
+ .btn:hover {
+     transform: translateY(-3px);
+     box-shadow: 0 10px 20px #be8aef;
+ }
+ 
+ .btn:active {
+     transform: translateY(-1px);
+     box-shadow: 0 5px 10px #be8aef;
+ }
+ 
+ .btn-white {
+     background-color: #be8aef;
+     color: #be8aef;
+ }
+ 
+ .btn::after {
+     content: "";
+     display: inline-block;
+     height: 98%;
+     width: 98%;
+     border-radius: 100px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: -1;
+     transition: all .4s;
+ }
+ 
+ .btn-white::after {
+     background-color: #be8aef;
+ }
+ 
+ .btn:hover::after {
+     transform: scaleX(1.4) scaleY(1.6);
+     opacity: 0;
+ }
+ 
+ .btn-animated {
+     animation: moveInBottom 5s ease-out;
+     animation-fill-mode: backwards;
+ }
+ 
+ @keyframes moveInBottom {
+     0% {
+         opacity: 0;
+         transform: translateY(30px);
+     }
+ 
+     100% {
+         opacity: 1;
+         transform: translateY(0px);
+     }
+ }
+ 
+ @media all and (max-width: 1040px) {
+ 
+    .text-box {
+       top: 320px;
+    }
+ 
+    .tag, .tag2 {
+       font-size: 62px;
+    }
+ 
+    .tag2 {
+       top: 180px;
+    }
+ 
+    .btn:link,
+    .btn:visited {
+       padding: 5px;
+       min-width: 200px;
+       min-height: 35px;
+    }
+    .suN {
+       top: 250px;
+ }
+ }
+ 
+ @media all and (max-width: 950px) {
+    .text-box {
+       top: 280px;
+    }
+ 
+    .tag, .tag2 {
+       font-size: 58px;
+    }
+ 
+    .tag2 {
+       top: 170px;
+    }
+ 
+    .btn:link,
+    .btn:visited {
+       padding: 2px;
+       min-height: 40px;
+       font-size: 22px;
+    }
+    .suN {
+       top: 180px;
+    }
+ }
+ 
+ @media all and (max-width: 800px) {
+    .image {
+       width: 55%;
+    }
+ 
+    .tag, .tag2 {
+       font-size: 48px;
+    }
+ 
+    .tag {
+       top: 110px;
+    }
+ 
+    .tag2 {
+       top: 150px;
+    }
+    .suN {
+       left: 24%;
+       top: 180px;
+    }
+    .text-box {
+       top: 240px;
+       left: 63%;
+    }
+ }
+ 
+ @media all and (max-width: 700px) {
+    .tag, .tag2 {
+       font-size: 40px;
+    }
+    .tag {
+       top: 90px;
+    }
+    .tag2 {
+       top: 125px;
+    }
+    .suN {
+       left: 24%;
+       top: 120px;
+    }
+    .text-box {
+       top: 200px;
+    }
+    .btn:link,
+    .btn:visited {
+       padding: 0px;
+       min-width: 180px;
+       min-height: 35px;
+       font-size: 18px;
+    }
+ }
+ 
+ @media all and (max-width: 650px) {
+    .tag, .tag2 {
+       font-size: 38px;
+    }
+    .tag2 {
+       top: 125px;
+    }
+    .tag {
+       top: 90px;
+    }
+    .text-box {
+       top: 210px;
+    }
+    .suN {
+       left: 24%;
+       top: 160px;
+    }
+ }
+ 
+ @media all and (max-width: 600px) {
+    .btn:link,
+    .btn:visited {
+       min-width: 160px;
+       min-height: 32px;
+       font-size: 16px;
+    }
+    .tag2 {
+       top: 105px;
+    }
+    .tag {
+       top: 70px;
+    }
+    .text-box {
+       top: 180px;
+    }
+    .suN {
+       left: 24%;
+       top: 140px;
+    }
+ }
+ 
+ @media all and (max-width: 550px) {
+    .tag, .tag2 {
+       font-size: 33px;
+    }
+    .tag2 {
+       top: 105px;
+    }
+    .text-box {
+       top: 165px;
+    }
+    .btn:link,
+    .btn:visited {
+       min-width: 140px;
+       min-height: 28px;
+       font-size: 12px;
+    }
+    .suN {
+       top: 120px;
+    }
+ }
+ 
+ @media all and (max-width: 500px) {
+    .tag, .tag2 {
+       font-size: 28px;
+    }
+    .tag2 {
+       top: 90px;
+    }
+    .tag {
+       top: 60px;
+    }
+    .text-box {
+       top: 150px;
+    }
+    .btn:link,
+    .btn:visited {
+       min-width: 120px;
+       min-height: 22px;
+       font-size: 12px;
+    }
+    .suN {
+       left: 24%;
+       top: 120px;
+    }
+ }
+ @media screen and (max-width: 430px) {
+     #rotate {
+         background-color: #203b79;
+         display: block;
+         height: 100vh;
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+     }
+     .conteyner {
+         display: none;
+     }
+ }
+ 

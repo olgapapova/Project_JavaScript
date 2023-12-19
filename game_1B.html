@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=UTF-8>    
+    <link rel='stylesheet' href='style_game_1B.css' type='text/css'>
+    <meta name='viewport' content='width=device-width, height=device-height, target-densitydpi=device-dpi, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <title>Game1</title>
+  </head>
+  <body id='bod'>
+
+  <script>
+   
+       let fish='Image/fish1.png';
+       let cube='Image/rubiks-cube.png';
+       let sun='Image/sun2.png';
+       let animal='Image/animal.png';
+       let apple='Image/apple.png';
+       let eggplant='Image/eggplant.png';
+       let circle='Image/circle.png';
+       let animal2='Image/animal2.png';
+       let cherries='Image/cherries.png';
+       let cone='Image/cone.png';
+       let duck1='Image/duck1.png';
+       let car='Image/car.png';
+       let peach='Image/peach.png';
+       let star='Image/star.png';
+       let tomato='Image/tomato.png';
+       let owl='Image/owl.png';
+       let beet='Image/beet.png';
+       let kv='Image/kv.png';
+       let twitter='Image/twitter.png';
+
+    </script>
+
+  <div class='conteyner'>
+
+     <svg id='stEl' viewBox="0 0 408 359" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="location.href='menu2.html';">
+
+       <defs>
+        <style><![CDATA[
+          #stEl {
+             width: 9%;
+             position: absolute;
+             left: 0;
+             top: 0;
+             cursor: pointer;
+             transform: translateX(-150%);
+             animation: ani 1s forwards;
+          }
+          @keyframes ani {
+             0% {transform: translateX(-150%);}
+             100% {transform: translateY(0);}
+          }
+          #stEl:hover {
+             transform: scale(1.2);
+          }
+          #cl1 {
+             fill: #14a1ff;
+          }
+          #cl2 {
+             fill: #94d4ff;
+          }    
+          #p1 {
+             fill: #14a1ff;
+          }   
+        ]]></style>
+      </defs>
+
+        <circle id='cl1' cx="258" cy="209" r="150" fill="#A65DE9"/>
+        <circle id='cl2' cx="258" cy="209" r="135" fill="#D7B7F5"/>
+        <path id='p1' d="M167.825 194.866C158.748 203.513 167.825 194.866 156.054 206.215C156.054 209.998 152.413 209.998 167.825 220.806C192.124 237.848 228.383 265.446 240.154 277.227C244.192 281.269 253.321 284.754 260.577 282.74C280.432 277.227 269.37 251.791 269.937 236.695C294.236 237.163 344.138 237.819 349.357 236.695C355.881 235.29 359.499 180.918 349.357 178.761C337.161 176.167 296.694 175.158 269.937 176.167C268.991 170.402 269.937 149.47 269.937 149.47C269.937 149.47 269.937 138.661 260.577 134.337C254.027 131.312 245.449 135.779 240.722 138.661C220.205 153.793 176.902 186.219 167.825 194.866Z" fill="#A65DE9" stroke="#A65DE9"/>
+    </svg>
+
+    <div class='playingField'>
+      <div id='border1a' class='imgConteynerGl'>
+      </div>
+      <div id='border1b' class='imgConteyner'>
+      </div>
+      <div id='border2a' class='imgConteynerGl'>
+      </div>
+      <div id='border2b' class='imgConteyner'>
+      </div>
+      <div id='border3a' class='imgConteynerGl'>
+      </div>
+      <div id='border3b' class='imgConteyner'>
+      </div>
+      <div id='border4a' class='imgConteynerGl'>
+      </div>
+      <div id='border4b' class='imgConteyner'>
+      </div>
+    </div>
+    <div class='playingField2'>
+      <div id='border5' class='imgConteyner2'>
+      </div>
+      <div id='border6' class='imgConteyner2'>
+      </div>
+      <div id='border7' class='imgConteyner2'>
+      </div>
+      <div id='border8' class='imgConteyner2'>
+      </div>
+    </div>
+  </div>
+
+  <div id='rotate'><p id='text'>Приложение используется только в лондшафтном режиме!</p></div>
+  <script src='js_game_1B.js'></script>
+
+  </body>
+</html>
